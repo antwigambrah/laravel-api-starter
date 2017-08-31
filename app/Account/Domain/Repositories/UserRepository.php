@@ -18,14 +18,11 @@ class UserRepository implements UserRepositoryInterface
  public function create(array $user)
  {
 
-  $user = User::create([
-   'name' => $user['name'],
-   'email' => $user['email'],
-   'password' => Hash::make($user['password']),
-   'mobile_no' => $user['mobile_no'],
-   'account_id' => 1
-  ]);
+  $user = User::create($user);
 
+  $user->update([
+   'account_id' => $user->id
+  ]);
 
   return $user;
  }
