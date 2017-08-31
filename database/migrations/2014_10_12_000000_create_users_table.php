@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string("mobile_no");
             $table->boolean("is_active")->default(true);
-            $table->integer("account_id");
+            $table->integer("account_id")->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
