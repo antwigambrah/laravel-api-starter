@@ -22,12 +22,10 @@ class UserRepository implements UserRepositoryInterface
    'name' => $user['name'],
    'email' => $user['email'],
    'password' => Hash::make($user['password']),
-   'mobile_no' => $user['mobile_no']
+   'mobile_no' => $user['mobile_no'],
+   'account_id' => 1
   ]);
 
-  $user->update([
-   'account_id' => $user->id
-  ]);
 
   return $user;
  }
