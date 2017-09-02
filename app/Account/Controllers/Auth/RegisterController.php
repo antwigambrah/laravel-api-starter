@@ -1,11 +1,10 @@
 <?php 
 namespace App\Account\Controllers\Auth;
 
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use Validator;
-use App\Account\Domain\Models\User;
 use App\Account\Domain\Services\Auth\RegisterService;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Validator;
 
 
 class RegisterController extends Controller
@@ -47,3 +46,4 @@ class RegisterController extends Controller
  }
 
 }
+
