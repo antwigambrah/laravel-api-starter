@@ -1,7 +1,7 @@
 <?php
-namespace App\Account\Domain\Services\Auth;
+namespace App\Account\Services\Auth;
 
-use App\Account\Controllers\Auth\ValidateUser;
+use App\Account\Services\Auth\ValidateUser;
 use Auth;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\Request;

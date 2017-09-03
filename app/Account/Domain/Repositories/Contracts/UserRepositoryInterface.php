@@ -1,15 +1,6 @@
 <?php
 namespace App\Account\Domain\Repositories\Contracts;
 
-interface UserRepositoryInterface
+interface UserRepositoryInterface extends BaseRepositoryInterface
 {
-
- /**
-  * Creates a new User
-  *
-  * @param array $user
-  * @return void
-  */
- public function create(array $user);
-
 }

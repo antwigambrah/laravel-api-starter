@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Account\Domain\Services\User;
+namespace App\Account\Services\User;
 
 use Illuminate\Http\Resources\Json\Resource;
 

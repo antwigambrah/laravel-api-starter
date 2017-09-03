@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Account\Domain\Services\Auth;
+namespace App\Account\Services\Auth;
 
-use App\Account\Controllers\Auth\ValidateUser;
-use App\Account\Domain\Repositories\Contracts\UserRepositoryInterface;
+use App\Account\Services\Auth\ValidateUser;
+use App\Account\Domain\Repositories\Contracts\AccountRepositoryInterface;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\Request;
 use Validator;
@@ -25,7 +25,8 @@ class RegisterService implements Responsable
         'name' => 'required',
         'email' => 'required',
         'password' => 'required',
-        'mobile_no' => 'required'
+        'mobile_no' => 'required',
+        'account_type'
     ];
 
     /**
@@ -38,10 +39,10 @@ class RegisterService implements Responsable
     /**
      * Creates a new register service instance
      *
-     * @param UserRepositoryInterface $repository
+     * @param AccountRepositoryInterface  $repository
      * @param Request $request
      */
-    public function __construct(UserRepositoryInterface $repository, Request $request)
+    public function __construct(AccountRepositoryInterface $repository, Request $request)
     {
         $this->repository = $repository;
     }

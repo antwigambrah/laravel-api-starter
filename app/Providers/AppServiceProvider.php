@@ -25,5 +25,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind('App\Account\Domain\Repositories\Contracts\UserRepositoryInterface', 'App\Account\Domain\Repositories\UserRepository');
+        $this->app->bind('App\Account\Domain\Repositories\Contracts\AccountRepositoryInterface', 'App\Account\Domain\Repositories\AccountRepository');
+
     }
 }

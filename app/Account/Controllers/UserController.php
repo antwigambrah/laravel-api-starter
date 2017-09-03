@@ -2,11 +2,10 @@
 
 namespace App\Account\Controllers;
 
-use App\Account\Domain\Services\User\UserDetailsResource;
+use App\Account\Services\User\UserDetailsResource;
 use App\Http\Controllers\Controller;
 use Auth;
 use Illuminate\Http\Request;
-
 
 class UserController extends Controller
 {

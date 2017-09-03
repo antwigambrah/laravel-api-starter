@@ -1,6 +1,6 @@
 <?php 
 namespace App\Account\Controllers\Auth;
-use App\Account\Domain\Services\Auth\LoginService;
+use App\Account\Services\Auth\LoginService;
 use Auth;
 use Illuminate\Http\Request;
 use Validator;

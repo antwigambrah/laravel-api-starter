@@ -1,8 +1,8 @@
 <?php 
 namespace App\Account\Controllers\Auth;
 
-use App\Account\Domain\Repositories\Contracts\UserRepositoryInterface;
-use App\Account\Domain\Services\Auth\RegisterService;
+use App\Account\Domain\Repositories\Contracts\AccountRepositoryInterface;
+use App\Account\Services\Auth\RegisterService;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Validator;
@@ -23,11 +23,13 @@ class RegisterController extends Controller
      * Creates a new Register Controller instance
      *
      * RegisterController constructor.
-     * @param UserRepositoryInterface $repository
+     * @param AccountRepositoryInterface $repository
      */
-    public function __construct(UserRepositoryInterface $repository)
+    public function __construct(AccountRepositoryInterface $repository)
     {
         $this->repository = $repository;
+
+
     }
 
 
@@ -39,6 +41,7 @@ class RegisterController extends Controller
      */
     public function register(Request $request)
     {
+
         return new RegisterService($this->repository, $request);
 
     }
