@@ -35,7 +35,8 @@ $ php artisan passport:install
 
 ####Create new User Account
 
-![registration](/public/images/userregister.png?raw=true "register")
+![userregister](https://user-images.githubusercontent.com/12635930/30114883-feee2800-92cd-11e7-9030-623771b6c41b.PNG)
+
 
 ####Login to user to authenticate user and generate access token
 
