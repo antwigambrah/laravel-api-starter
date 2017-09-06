@@ -22,7 +22,7 @@ Run the Artisan migrate command with seed:
 $ php artisan migrate 
 ```
 
-Create "personal access" and "password grant" clients which will be used to generate access tokens:
+##Create "personal access" and "password grant" clients which will be used to generate access tokens:
 ```bash
 $ php artisan passport:install
 
@@ -32,3 +32,8 @@ $ php artisan passport:install
 | GET      | /api/v1/auth/register| register | Register a new account
 | POST     | /api/v1/auth/login| login | Login 
 | GET      | /api/user| getUserDetails|  Fetch authenticated user
+
+##Create new User Account
+![account registeration](https://raw.github.com/antwigambrah/laravel-api-starter/master/public/images/userregister)
+
+
