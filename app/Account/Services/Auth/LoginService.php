@@ -41,7 +41,10 @@ class LoginService implements Responsable
      */
     public function sendAttemptLoginResponse()
     {
-        return response('unauthenticated', 401);
+        return response()->json([
+            'status' => '401',
+            'message' => 'unauthorised'
+        ]);
     }
 
     /**
@@ -51,7 +54,7 @@ class LoginService implements Responsable
      */
     public function generateToken()
     {
-        return Auth::user()->createToken(Auth::user()->email)->accessToken;
+        return Auth::user()->createToken(Auth::user()->email, [])->accessToken;
     }
 
     /**

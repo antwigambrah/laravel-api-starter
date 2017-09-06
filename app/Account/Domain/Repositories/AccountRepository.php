@@ -3,9 +3,9 @@
 
 namespace App\Account\Domain\Repositories;
 use App\Account\Domain\Repositories\Contracts\AccountRepositoryInterface;
-
 use App\Account\Domain\Models\Account;
 use Hash;
+
 class AccountRepository implements AccountRepositoryInterface
 {
 

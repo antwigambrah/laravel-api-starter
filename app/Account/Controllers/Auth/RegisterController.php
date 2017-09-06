@@ -10,13 +10,12 @@ use Validator;
 
 class RegisterController extends Controller
 {
-
     /**
-     * User repository
+     * User Account repository
      *
      * @var string
      */
-    protected $repository;
+    protected $account;
 
 
     /**
@@ -25,9 +24,9 @@ class RegisterController extends Controller
      * RegisterController constructor.
      * @param AccountRepositoryInterface $repository
      */
-    public function __construct(AccountRepositoryInterface $repository)
+    public function __construct(AccountRepositoryInterface $account)
     {
-        $this->repository = $repository;
+        $this->account=$account;
 
 
     }
@@ -41,8 +40,7 @@ class RegisterController extends Controller
      */
     public function register(Request $request)
     {
-
-        return new RegisterService($this->repository, $request);
+        return new RegisterService($this->account,$request);
 
     }
 

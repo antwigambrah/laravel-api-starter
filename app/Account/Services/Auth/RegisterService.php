@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Account\Services\Auth;
 
 use App\Account\Services\Auth\ValidateUser;
@@ -69,11 +68,13 @@ class RegisterService implements Responsable
     public function sendRegisterUserResponse(Request $request)
     {
 
-        return response()->json([
 
-            'user' => $this->registernewUser($request->all())
+        return !$this->registernewUser($request->all()) ? : response()->json([
 
-        ]);
+            'status' => '200',
+            'message' => 'Account succesfully created'
+
+        ], 200);
 
     }
 
