@@ -1,6 +1,6 @@
 ## Rest Api with Laravel(5.5)
 
-A simple jwt rest api starter  built with laravel framework
+A simple jwt rest api starter  
 
 ##Want to Build Upon It ?
 
@@ -9,20 +9,20 @@ First, clone the repo:
 $ git clone git@github.com:antwigambrah/laravel-api-starter.git
 ```
 
-#### Install dependencies
+####Install dependencies
 ```
 $ cd laravel-api-starter
 $ composer install
 ```
 
-#### Configure the Environment in the .env file
+####Configure the Environment in the .env file
 
-Run the Artisan migrate command with seed:
+Run the Artisan migrate 
 ```bash
 $ php artisan migrate 
 ```
 
-##Create "personal access" and "password grant" clients which will be used to generate access tokens:
+####Create passport  oauth2 clients  to generate access tokens:
 ```bash
 $ php artisan passport:install
 
@@ -32,8 +32,22 @@ $ php artisan passport:install
 | GET      | /api/v1/auth/register| register | Register a new account
 | POST     | /api/v1/auth/login| login | Login 
 | GET      | /api/user| getUserDetails|  Fetch authenticated user
+```
 
-##Create new User Account
-![account registeration](https://raw.github.com/antwigambrah/laravel-api-starter/master/public/images/userregister)
+####Create new User Account
+![account registration](https://raw.github.com/antwigambrah/laravel-api-starter/master/public/images/userregister.png)
+
+####Login to user to authenticate user and generate access token
+
+![authenticate user ](https://raw.github.com/antwigambrah/laravel-api-starter/master/public/images/loginaccesstoken.png)
+
+####Access authenticated user with generated access token
+![access use data](https://raw.github.com/antwigambrah/laravel-api-starter/master/public/images/userdata.png)
+
+####License
+
+ [MIT license](http://opensource.org/licenses/MIT)
+
+
 
 
