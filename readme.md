@@ -1,4 +1,4 @@
-## Rest Api with Laravel(5.5)
+## Rest Api with [Laravel(5.5)](https://laravel.com/)
 
 A simple jwt rest api starter  
 
@@ -23,7 +23,7 @@ $ php artisan migrate
 ```
 
 ## Create passport  oauth2  personal clients  to generate access tokens
-Note: Personal access clients allows registered users to issues tokens to themselves after email and password authentications
+ [Personal Access Tokens)](https://laravel.com/docs/5.5/passport#personal-access-tokens)
 
 ```bash
 $ php artisan passport:install
