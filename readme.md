@@ -33,20 +33,22 @@ $ php artisan passport:install
 | POST     | /api/v1/auth/login| login | Login 
 | GET      | /api/user| getUserDetails|  Fetch authenticated user
 
-####Create new User Account
+#### Create new User Account
 
 ![userregister](https://user-images.githubusercontent.com/12635930/30114883-feee2800-92cd-11e7-9030-623771b6c41b.PNG)
 
 
-####Login to user to authenticate user and generate access token
+#### Login to user to authenticate user and generate access token
 
-![authentication](/public/images/loginaccesstoken.png?raw=true "authenticate")
+![loginaccesstoken](https://user-images.githubusercontent.com/12635930/30114975-37684f62-92ce-11e7-91f7-7ea0e68ac3cd.PNG)
 
-####Access authenticated user with generated access token
 
-![authentication](/public/images/userdata.png?raw=true "authenticate")
+#### Access authenticated user with generated access token
 
-####License
+![userdata](https://user-images.githubusercontent.com/12635930/30114993-4865d906-92ce-11e7-9c2d-c494132a8bf5.PNG)
+
+
+#### License
 
  [MIT license](http://opensource.org/licenses/MIT)
 
