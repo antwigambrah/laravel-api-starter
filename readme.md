@@ -37,7 +37,7 @@ $ php artisan passport:client --password
 ```
 
 N:B The Grant type for the oauth2 implementation is Resource owner credentials grant(Password grant)  which allows your application(client)
-to create tokens for authenticated users after every login.To access the application(client) resource use the Client credentials grant type;
+to create tokens for authenticated users after every login.This is mostly suitable when API may be consumed by your web application, mobile applications etc where a user token is issued after user is authenticated as in jwts.To access the application(client) resource use the Client credentials grant type;
 
 ## Api routes 
 
