@@ -22,7 +22,9 @@ Run the Artisan migrate
 $ php artisan migrate 
 ```
 
-## Create passport  oauth2 clients  to generate access tokens
+## Create passport  oauth2  personal clients  to generate access tokens
+Note: Personal access clients allows registered users to issues tokens to themselves after email and password authentications
+
 ```bash
 $ php artisan passport:install
 ```
