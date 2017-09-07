@@ -1,6 +1,6 @@
 ## Rest Api with [Laravel(5.5)](https://laravel.com/)
 
-A simple jwt rest api starter  
+An oauth2  rest api starter 
 
 ## Want to Build Upon It ?
 
@@ -25,9 +25,19 @@ $ php artisan migrate
 ## Create passport  oauth2  personal clients  to generate access tokens
  [Personal Access Tokens)](https://laravel.com/docs/5.5/passport#personal-access-tokens)
 
+To create both personal access clients and password access clients 
 ```bash
 $ php artisan passport:install
 ```
+or 
+
+To create password access clients
+```bash
+$ php artisan passport:client --password
+```
+
+N:B The Grant type for the oauth2 implementation is Resource owner credentials grant(Password grant)  which allows your application(client)
+to create tokens for authenticated users after every login.To access the application(client) resource use the Client credentials grant type;
 
 ## Api routes 
 
