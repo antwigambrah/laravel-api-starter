@@ -43,7 +43,7 @@ to create tokens for authenticated users after every login.This is mostly suitab
 
 | HTTP Method	| Path | Action | Desciption  |
 | ----- | ----- | ----- | ------------- |
-| GET      | /api/v1/auth/register| register | Register a new account
+| POST    | /api/v1/auth/register| register | Register a new account
 | POST     | /api/v1/auth/login| login | Login 
 | GET      | /api/user| getUserDetails|  Fetch authenticated user
 
